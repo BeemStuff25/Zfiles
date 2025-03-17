@@ -1,0 +1,102 @@
+.ImgGrid-container {
+    display: grid;
+    grid-template-columns: 2fr 5fr 5fr; /* 3 columns */
+    width: 100%;
+    border-radius: 4px;
+}
+
+.SizeGrid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+}
+  
+.left, .middle, .right {
+    padding: 10px;
+}
+  
+.left {
+    background-color: lightgray;
+}
+
+.middle {
+    background-color: rgb(191, 191, 191);
+}
+  
+.right {
+    background-color: lightgrey;
+}
+
+.LeftStoreImg {
+    width: 95%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 5px;
+}
+
+.MainStoreImg {
+    width: 95%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.CustImg  {
+    float: right;
+    padding-right: 20px;
+}
+  
+/* Mobile view: Stack the divs */
+  @media (max-width: 768px) {
+    .ImgGrid-container {
+      grid-template-columns: 1fr; /* Make it a single column */
+    }
+}
+
+@media (max-width: 786px) {
+  .LeftStoreImg {
+    display: none;
+  }
+}
+
+input[type="number"] {
+    max-width: 80%;
+    overflow: hidden;
+}
+
+.SizeBox {
+    margin-top: 4px;
+    text-align: center;
+    border-radius: 10px;
+    border-color: darkgrey;
+    border-width: 2px;
+    border-style: solid;
+    padding: 4px;
+    width: 80%;
+}
+
+.itemTotals {
+  float: right;
+}
+
+#eventName {
+  font-family: Oswald, sans-serif;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 5px;
+  font-size: 1.25em;
+}
+
+  /* For Chrome, Safari, Edge, and Opera */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* For Firefox */
+input[type="number"] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>317 Press</title>
+    <link rel="stylesheet" href="includes/Zstyles.css">
+    <link rel="stylesheet" href="includes/storestyles.css">
+    <link rel="stylesheet" href="includes/GalleryDriver.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@1..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <script src="includes/GalleryDriver.js"></script>
+    <script src="includes/Sumfunctions.js"></script>
+    <script src="includes/Countdown.js"></script>
+</head>
+<body class = "bodyContent">
+    <div class="header-band">
+        <a href="index.html" class="mainLogo"><img src="images/317p_200px.png" alt="317 Press"></a>
+        <img src = "CustImg/CustCenterpont.png" alt = "Customer Logo" class = "CustImg">
+    </div>
+    <div id="eventName">
+        <h1>Avon Fall '25 Show Shirt | <em>order closes in: <span id="countdown"></span></em> </h1>
+    </div>
+    <div class="ImgGrid-container">
+        <div class="left">
+            <img src="DesignImages/CB_01mock.png" class="LeftStoreImg" onclick="myFunction1(this);">
+            <img src="DesignImages/CB_01.png" class="LeftStoreImg" onclick="myFunction1(this);">
+            <img src="DesignImages/CB_01back.png" class="LeftStoreImg" onclick="myFunction1(this);">
+        </div>
+        <div class="middle">
+            <img id="expandedImg" src="DesignImages/CB_01.png" class="MainStoreImg">
+        </div>
+        <div class="right">
+            <h2 id="ShirtDescription1"></h2>
+            <h1 id="ShirtPrice1"></h1>
+            <b>Color:</b> <span id="ShirtColor1"></span>
+             <div class="SizeGrid-container">
+                <div class="SizeBox">
+                    <label for="SizeInput1">S:</label><br>
+                    <input type="number" class="SizeInput" id="SizeInput1" name="SizeInput1">
+                </div>
+                <div class="SizeBox">
+                    <label for="SizeInput2">M:</label><br>
+                    <input type="number" class="SizeInput" id="SizeInput2" name="SizeInput2">
+                </div>
+                <div class="SizeBox">
+                    <label for="SizeInput3">L:</label><br>
+                    <input type="number" class="SizeInput" id="SizeInput3" name="SizeInput3">
+                 </div>
+                <div class="SizeBox">
+                    <label for="SizeInput4">XL:</label><br>
+                    <input type="number" class="SizeInput" id="SizeInput4" name="SizeInput4">
+                </div>
+            </div>
+            <div class="SizeGrid-container">
+                <div class="SizeBox">
+                    <label for="SizeInput5">2XL:</label><br>
+                    <input type="number" class="SizeInput" id="SizeInput5" name="SizeInput5">
+                </div>
+                <div class="SizeBox">
+                    <label for="SizeInput6">3XL:</label><br>
+                    <input type="number" class="SizeInput" id="SizeInput6" name="SizeInput6">
+                 </div>
+                <div class="SizeBox">
+                    <label for="SizeInput7">4XL:</label><br>
+                    <input type="number" class="SizeInput" id="SizeInput7" name="SizeInput7">
+                </div>
+                <div class="SizeBox">
+                    <label for="SizeInput8">5XL:</label><br>
+                    <input type="number" class="SizeInput" id="SizeInput8" name="SizeInput8">
+                </div>
+            </div>
+        <div>
+            <hr>
+            <span class="itemTotals">
+            Item Quantity: <span id="totalQuantity1">0</span><br>
+            Item Price: <span id="totalPrice1">$0.00</span>
+            </span>  
+        </div>
+    </div>
+    <hr>
+</div>
+    <div class="ImgGrid-container">
+        <div class="left">
+            <img src="DesignImages/CB_02.png" class="LeftStoreImg" onclick="myFunction2(this);">
+            <img src="DesignImages/CB_02mock.png" class="LeftStoreImg" onclick="myFunction2(this);">
+        </div>
+        <div class="middle">
+            <img id="expandedImg2" src="DesignImages/CB_02.png" class="MainStoreImg">
+        </div>
+        <div class="right">
+            <h2 id="ShirtDescription2"></h2>
+            <h1 id="ShirtPrice2"></h1>
+            <b>Color:</b> <span id="ShirtColor2"></span>
+            <div class="SizeGrid-container">
+                <div class="SizeBox">
+                    <label for="SizeInput9">S:</label><br>
+                    <input type="number" class="SizeInput2" id="SizeInput9" name="SizeInput9">
+                </div>
+                <div class="SizeBox">
+                    <label for="SizeInput10">M:</label><br>
+                    <input type="number" class="SizeInput2" id="SizeInput10" name="SizeInput10">
+                </div>
+                <div class="SizeBox">
+                    <label for="SizeInput11">L:</label><br>
+                    <input type="number" class="SizeInput2" id="SizeInput11" name="SizeInput11">
+                </div>
+                <div class="SizeBox">
+                    <label for="SizeInput12">XL:</label><br>
+                    <input type="number" class="SizeInput2" id="SizeInput12" name="SizeInput12">
+                </div>
+            </div>
+            <div class="SizeGrid-container">
+                <div class="SizeBox">
+                    <label for="SizeInput13">2XL:</label><br>
+                    <input type="number" class="SizeInput2" id="SizeInput13" name="SizeInput13">
+                </div>
+                <div class="SizeBox">
+                    <label for="SizeInput14">3XL:</label><br>
+                    <input type="number" class="SizeInput2" id="SizeInput14" name="SizeInput14">
+                </div>
+                <div class="SizeBox">
+                    <label for="SizeInput15">4XL:</label><br>
+                    <input type="number" class="SizeInput2" id="SizeInput15" name="SizeInput15">
+                </div>
+                <div class="SizeBox">
+                    <label for="SizeInput16">5XL:</label><br>
+                    <input type="number" class="SizeInput2" id="SizeInput16" name="SizeInput16">
+                </div>
+            </div>
+            <div>
+                <hr>
+                <div class="itemTotals">
+                Item Quantity: <span id="totalQuantity2">0</span><br>
+                Item Price: <span id="totalPrice2">$0.00</span>
+                </div>  
+            </div>
+        </div>
+    </div>
+
+<div class = "footer">
+    <p class="Fat">
+        Items: <span id="TotalQuantity"></span> | Subtotal: <span id="SubTotal"></span> | Tax: <span id="SalesTax"></span> | Grand Total: <span id="GrandTotal"></span><br>
+        <button style="margin-left: auto; margin-right:auto;" onclick="submitOrder()">Submit Order</button>
+    </p>
+    <pc class="Skinny">
+        Items: <span id="TotalQuantitySkinny"></span> | Subtotal: <span id="SubTotalSkinny"></span> | Tax: <span id="SalesTaxSkinny"></span> | Grand Total: <span id="GrandTotalSkinny"></span><br>
+        <button style="margin-left: auto; margin-right:auto;" onclick="submitOrder()">Submit Order</button>
+    </div>
+</body>
+</html>
