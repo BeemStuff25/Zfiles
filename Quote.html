@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>317 Press | Quote Generator</title>
+    <link rel="stylesheet" href="includes/Zstyles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@1..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <script src="includes/QuoteJS.js"></script>
+</head>
+<body class="bodyContent">
+    <div class="header-band">
+        <a href="index.html"><img src="images/317p_200px.png" alt="317 Press Logo"></a>
+    </div>
+    <h1>Quote Generator</h1>
+    <hr>
+    <div class="ProductSelector">
+        Style #:
+        <input type="text" id="productSelect" name="productSelect" style="width: 100px;">
+        <input type="button" value="Search" onclick="productSearch()">
+        <br>
+        <em>*this is where the corrresponding style description would appear*</em>
+        <br>
+        Select a color:
+        <select name="productColor" id="productColor">
+        </select>
+        <br>
+        Quantity:
+        <input type="text" id="productQuantity" name="productQuantity" style="width: 50px;">
+        </div>
+    <hr>
+    <div class="decoOptionBox">
+        <span class = "decoOption">
+            Colors/Stitches:
+            <input type="text" id="decoColors1" name="decoColors1" style="width: 50px;"><br>
+            DecoType:
+            <select name="decoSelect1" class="decoSelect" id="dS1"></select>
+        </span>
+        <span class = "decoOption">
+            Colors/Stitches:
+            <input type="text" id="decoColors2" name="decoColors2" style="width: 50px;"><br>
+            DecoType:
+            <select name="decoSelect2" class="decoSelect" id="dS2"></select>
+        </span>
+        <span class = "decoOption">
+            Colors/Stitches:
+            <input type="text" id="decoColors3" name="decoColors3" style="width: 50px;"><br>
+            DecoType:
+            <select name="decoSelect3" class="decoSelect" id="dS3"></select>
+        </span>
+        <span class = "decoOption">
+            Colors/Stitches:
+            <input type="text" id="decoColors4" name="decoColors4" style="width: 50px;"><br>
+            DecoType:
+            <select name="decoSelect4" class="decoSelect" id="dS4"></select>
+        </span>
+    </div>
+    <hr>
+    <div class="quoteResults">
+        <div class="quoteResultLeft">
+            <b>Disclaimers:</b> Whatever extra information, relevant to the quote should be displayed here. This is a good place to put the "fine print" that is often overlooked.
+        </div>
+        <div class="quoteResultRight">
+            Price Each: $<span id="priceEach">0.00</span><br>
+            Sales Tax: $<span id="salesTax">0.00</span><br>
+            Setup Fees: $<span id="setupFee">0.00</span><br>
+            <hr>
+            Subtotal: $<span id="subTotal">0.00</span><br>
+            Discounts/Credits: $<span id="discounts">0.00</span><br>
+            <hr>
+            Total Price: $<span id="totalPrice">0.00</span> <br>
+            <hr>
+                Net Price w/Tax: $<span id="netPrice">0.00</span><br>
+                Net Price w/o Tax: $<span id="netPriceNoTax">0.00</span>
+        </div>
+    </div>
+    <div style="width: 99%;">
+        <input type="button" value="Caclulate" style="float: right;" id="calculateButton" onclick="addDeco()">
+    </div>
+    <div class = "footer">
+        <p class = "Fat">
+            Questions - call <a href = "tel:+13178180659">317.818.0659</a> text <a href="sms:+13178180659">317.818.0659</a> or email <a href="mailto:questions@317press.com?subject=Order%20Questions">questions@317press.com</a>
+        </p>
+        <p class = "Skinny">
+            Questions - call <a href = "tel:+13178180659">317.818.0659</a> text <a href="sms:+13178180659">317.818.0659</a> or email <a href="mailto:questions@317press.com?subject=Order%20Questions">questions@317press.com</a>
+        </p>
+    </div>
+</body>
+</html>
