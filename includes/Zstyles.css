@@ -24,7 +24,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .quoteResults {
     display: flex;
-    grid-template-columns: fr fr; /* 4 columns */
+    grid-template-columns: fr fr; /* 2 columns */
     width: 99%;
     border-radius: 4px;
     background-color: lightgrey;
@@ -40,13 +40,6 @@ h1, h2, h3, h4, h5, h6 {
     margin: 5px;
 }
 
-#calculateButton {
-    padding: 5px;
-    border-radius: 4px;
-    font-size: 1.1em;
-    margin: 5px;
-}
-
 .quoteResultRight {
     text-align: right;
     width: 50%;
@@ -57,18 +50,34 @@ h1, h2, h3, h4, h5, h6 {
     margin: 5px;
 }   
 
+#calculateButton {
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 1.1em;
+    margin: 5px;
+}
+
 .bodyContent {
     font-family: Hepta Slab, serif;
     padding-left: 2.5%;
     padding-right: 2.5%;
     padding-bottom: 90px;
 }
+
 .header-band {
+    display: flex;
+    grid-template-columns: fr fr fr fr; /* 4 columns */
     height: 130px;
     background: linear-gradient(90deg, rgba(11,42,66,0.25) 0%, rgba(11,42,66,1) 100%);
     border-radius: 8px;
     overflow: hidden;
     padding: 10px;
+}
+
+.headerContent {
+    text-align: center;
+    width: 25%;
+    overflow: hidden;
 }
 
 .footer {
