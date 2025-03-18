@@ -6,8 +6,8 @@
 }
 
 .SizeGrid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr; 
+    display: flex;
+    gap: 5px;
 }
   
 .left, .middle, .right {
@@ -61,19 +61,19 @@
 }
 
 input[type="number"] {
-    max-width: 80%;
+    width: 50px;
     overflow: hidden;
 }
 
 .SizeBox {
-    margin-top: 4px;
+    flex: 1;
     text-align: center;
     border-radius: 10px;
     border-color: darkgrey;
     border-width: 2px;
     border-style: solid;
-    padding: 4px;
-    width: 80%;
+    padding: 3x;
+    margin-bottom: 3px;
 }
 
 .itemTotals {
