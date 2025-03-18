@@ -38,15 +38,9 @@
 
 .MainStoreImg {
     width: 95%;
-    height: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
-}
-
-.CustImg  {
-    float: right;
-    padding-right: 20px;
 }
   
 /* Mobile view: Stack the divs */
