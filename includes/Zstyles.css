@@ -3,6 +3,60 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 0px;
     margin-bottom: 0px;
 }
+
+.decoOptionBox {
+    display: flex;
+    grid-template-columns: fr fr fr fr; /* 4 columns */
+    width: 99%;
+    border-radius: 4px;
+    background-color: lightgrey;
+}
+
+.decoOption {
+    text-align: right;
+    width: 25%;
+    overflow: hidden;
+    padding: 5px;
+    border-radius: 4px;
+    background-color: white;
+    margin: 5px;
+}
+
+.quoteResults {
+    display: flex;
+    grid-template-columns: fr fr; /* 4 columns */
+    width: 99%;
+    border-radius: 4px;
+    background-color: lightgrey;
+}
+
+.quoteResultLeft {
+    text-align: left;
+    width: 50%;
+    overflow: hidden;
+    padding: 5px;
+    border-radius: 4px;
+    background-color: white;
+    margin: 5px;
+}
+
+#calculateButton {
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 1.1em;
+    margin: 5px;
+}
+
+.quoteResultRight {
+    text-align: right;
+    width: 50%;
+    overflow: hidden;
+    padding: 5px;
+    border-radius: 4px;
+    background-color: white;
+    margin: 5px;
+}   
+
 .bodyContent {
     font-family: Hepta Slab, serif;
     padding-left: 2.5%;
