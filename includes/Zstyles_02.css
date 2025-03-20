@@ -1,0 +1,225 @@
+.bodyContent {
+    font-family: Hepta Slab, serif;
+    font-size: 11pt;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-bottom: 90px;
+}
+.header-band {
+    display: flex;
+    grid-template-columns: fr fr; /* 2 columns */
+    background: linear-gradient(90deg, rgba(11,42,66,0.25) 0%, rgba(11,42,66,1) 100%);
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.headerContent {
+    width: 50%;
+    display: block;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 93%;
+    background: #0b2a42;
+    color: white;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding-left: 10px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Oswald, sans-serif;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/* .decoOptionBox {
+    display: flex;
+    grid-template-columns: fr fr fr fr; /* 4 columns 
+    width: 99%;
+    /* border-radius: 4px;
+    background-color: lightgrey;
+}
+
+.decoOption {
+    text-align: right;
+    width: 25%;
+    overflow: hidden;
+    padding: 5px;
+    border-radius: 4px;
+    background-color: white;
+    margin: 5px;
+} */ 
+
+.quoteResults {
+    display: flex;
+    grid-template-columns: fr fr; /* 4 columns */
+    width: 99%;
+    border-radius: 4px;
+}
+
+.quoteResultLeft {
+    text-align: left;
+    width: 50%;
+    overflow: hidden;
+    padding: 5px;
+    border-radius: 4px;
+    margin: 5px;
+}
+
+.quoteResultRight {
+    text-align: right;
+    width: 50%;
+    overflow: hidden;
+    padding: 5px;
+    border-radius: 4px;
+    margin: 5px;
+}   
+
+
+a{
+    color: #597991;
+    text-decoration: none;
+}
+
+#calculateButton {
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 1.1em;
+    margin: 5px;
+}
+
+/* .Fat {
+    font-size:medium;
+} */
+
+.Skinny {
+    font-size: small;
+}
+
+@media (max-width: 786px) {
+    .Fat{
+      display: none;
+    }
+  }
+
+  @media (min-width: 786px) {
+    .Skinny{
+      display: none;
+    }
+  }
+
+.SizeGrid-container {
+    display: flex;
+    gap: 5px;
+}
+
+.SizeBox {
+    flex: 1;
+    text-align: center;
+    border-radius: 10px;
+    border-color: darkgrey;
+    border-width: 2px;
+    border-style: solid;
+    padding: 3px;
+    margin-bottom: 3px;
+}
+
+.SizeBoxRight {
+    flex: 1;
+    text-align: right;
+    border-radius: 10px;
+    border-color: lightgray;
+    border-width: 1px;
+    border-style: solid;
+    padding: 3px;
+    margin-bottom: 3px;
+}
+
+.ImgGrid-container {
+    display: grid;
+    grid-template-columns: 2fr 5fr 5fr; /* 3 columns */
+    width: 100%;
+    border-radius: 4px;
+}
+  
+.left, .middle, .right {
+    padding: 10px;
+}
+  
+.left {
+    background-color: lightgray;
+}
+
+.middle {
+    background-color: rgb(191, 191, 191);
+}
+  
+.right {
+    background-color: lightgrey;
+}
+
+.LeftStoreImg {
+    width: 95%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 5px;
+}
+
+.MainStoreImg {
+    width: 95%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+/* Mobile view: Stack the divs */
+  @media (max-width: 768px) {
+    .ImgGrid-container {
+      grid-template-columns: 1fr; /* Make it a single column */
+    }
+}
+
+@media (max-width: 786px) {
+  .LeftStoreImg {
+    display: none;
+  }
+}
+
+#custImg {
+  margin-top: 5px;
+}
+
+input[type="number"] {
+    width: 50px;
+    overflow: hidden;
+}
+
+.itemTotals {
+  float: right;
+}
+
+#eventName {
+  font-family: Oswald, sans-serif;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 5px;
+  font-size: 1.25em;
+}
+
+  /* For Chrome, Safari, Edge, and Opera */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* For Firefox */
+input[type="number"] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+}

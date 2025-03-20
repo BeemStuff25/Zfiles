@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>317 Press | Quote Generator</title>
-    <link rel="stylesheet" href="includes/Zstyles.css">
+    <link rel="stylesheet" href="includes/Zstyles_02.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@1..900&display=swap" rel="stylesheet">
@@ -19,40 +19,42 @@
     <h1>Quote Generator</h1>
     <hr>
     <div class="ProductSelector">
-        Style #:
-        <input type="text" id="productSelect" name="productSelect" style="width: 100px;">
-        <input type="button" value="Search" onclick="productSearch()">
-        <br>
-        <em>*this is where the corresponding style description would appear*</em>
-        <br>
-        Select a color:
-        <select name="productColor" id="productColor">
-        </select>
-        <br>
-        Quantity:
-        <input type="text" id="productQuantity" name="productQuantity" style="width: 50px;">
+        <p>
+             Style #:
+            <input type="text" id="productSelect" name="productSelect" style="width: 100px;">
+            <input type="button" value="Search" onclick="productSearch()">
+        </p>
+        <p>
+            <em>*this is where the corresponding style description would appear*</em>
+        </p>
+        <p>
+            Select a color:<select name="productColor" id="productColor"></select>
+        </p>
+        <p>
+            Quantity:<input type="text" id="productQuantity" name="productQuantity" style="width: 50px;">
+        </p>
         </div>
     <hr>
-    <div class="decoOptionBox">
-        <span class = "decoOption">
+    <div class="SizeGrid-container">
+        <span class = "SizeBoxRight">
             Colors/Stitches:
             <input type="text" id="decoColors1" name="decoColors1" style="width: 50px;"><br>
             DecoType:
             <select name="decoSelect1" class="decoSelect" id="dS1"></select>
         </span>
-        <span class = "decoOption">
+        <span class = "SizeBoxRight">
             Colors/Stitches:
             <input type="text" id="decoColors2" name="decoColors2" style="width: 50px;"><br>
             DecoType:
             <select name="decoSelect2" class="decoSelect" id="dS2"></select>
         </span>
-        <span class = "decoOption">
+        <span class = "SizeBoxRight">
             Colors/Stitches:
             <input type="text" id="decoColors3" name="decoColors3" style="width: 50px;"><br>
             DecoType:
             <select name="decoSelect3" class="decoSelect" id="dS3"></select>
         </span>
-        <span class = "decoOption">
+        <span class = "SizeBoxRight">
             Colors/Stitches:
             <input type="text" id="decoColors4" name="decoColors4" style="width: 50px;"><br>
             DecoType:
@@ -64,7 +66,7 @@
         <div class="quoteResultLeft">
             <b>Disclaimers:</b> Whatever extra information, relevant to the quote should be displayed here. This is a good place to put the "fine print" that is often overlooked.
         </div>
-        <div class="quoteResultRight">
+        <div class="SizeBoxRight">
             Price Each: $<span id="priceEach">0.00</span><br>
             Sales Tax: $<span id="salesTax">0.00</span><br>
             Setup Fees: $<span id="setupFee">0.00</span><br>
